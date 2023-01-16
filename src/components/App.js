@@ -5,7 +5,13 @@ import ContactList from "./ContactList";
 import AddContact from "./AddContact";
 
 function App() {
-  return <div>Hello World</div>
+  return (
+    <div>
+      <Header />
+      {/* <AddContact />
+      <ContactList /> */}
+    </div>
+  );
 }
 
 export default App;
