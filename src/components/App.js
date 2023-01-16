@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <AddContact />
-      {/* <ContactList /> */}
+      <ContactList />
     </div>
   );
 }
