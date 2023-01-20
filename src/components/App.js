@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='ui container'>
       <Header />
-      <AddContact />
+      <AddContact AddContactHandler={AddContactHandler} />
       <ContactList contacts={contacts} />
     </div>
   );
