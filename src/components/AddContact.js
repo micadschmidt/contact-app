@@ -4,6 +4,11 @@ class AddContact extends React.Component {
   state = {
     name: "",
     email: "",
+  };
+
+  add = (e) => {
+    e.preventDefault();
+    if 
   }
   render() {
     return (
