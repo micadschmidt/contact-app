@@ -6,7 +6,7 @@ const ContactList = (props) => {
 
   const renderContactList = props.contacts.map((contact) => {
     return (
-      <ContactCard></ContactCard>
+      <ContactCard contact={contact}></ContactCard>
     );
   });
   return (
