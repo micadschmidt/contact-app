@@ -6,10 +6,13 @@ import AddContact from "./AddContact";
 
 function App() {
   const [contacts, setContacts] = useState([]);
+
+  const 
+
   return (
     <div className='ui container'>
       <Header />
-      <AddContact AddContactHandler={AddContactHandler} />
+      <AddContact addContactHandler={addContactHandler} />
       <ContactList contacts={contacts} />
     </div>
   );
