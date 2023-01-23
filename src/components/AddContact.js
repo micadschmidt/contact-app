@@ -37,5 +37,5 @@ class AddContact extends React.Component {
     );
   };
 };
-heloolalmksnlnDLFJLJDbfbjFBLFjb.ljbfsjblJFBL.
+
 export default AddContact;
