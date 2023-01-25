@@ -8,7 +8,7 @@ function App() {
   const [contacts, setContacts] = useState([]);
 
   const addContactHandler = (contact) => {
-    setContacts()
+    setContacts([...contacts, contact]);
   };
 
   return (
