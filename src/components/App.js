@@ -7,7 +7,9 @@ import AddContact from "./AddContact";
 function App() {
   const [contacts, setContacts] = useState([]);
 
-  const 
+  const addContactHandler = (contact) => {
+    setContacts()
+  };
 
   return (
     <div className='ui container'>
