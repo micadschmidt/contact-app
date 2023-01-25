@@ -6,6 +6,7 @@ import AddContact from "./AddContact";
 import userEvent from '@testing-library/user-event';
 
 function App() {
+  const LOCAL_STORAGE_KEY = "contacts";
   const [contacts, setContacts] = useState([]);
 
   const addContactHandler = (contact) => {
@@ -13,7 +14,7 @@ function App() {
   };
 
   useEffect(() => {
-      localStorage.setItem()
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
   }, [contacts]);
 
   return (
