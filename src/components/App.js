@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-//For a unique key necesitamos instalar un package: npm i uuidv4 //
+//For a unique key necesitamos instalar un package: npm i uuidv4 //  
 import { uuid } from 'uuidv4';
 import './App.css';
 import Header from "./Header";
@@ -23,7 +23,7 @@ function App() {
 
     setContacts(newContactList);
   };
-  
+
   useEffect(() => {
       const retriveContacts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
       if (retriveContacts) setContacts(retriveContacts);
