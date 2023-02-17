@@ -14,6 +14,13 @@ function App() {
     setContacts([...contacts, {id: uuid(), ...contacts }]);
   };
 
+  const removeContactHandler = (id) => {
+    const newContactList = contacts.filter((contact) => {
+      return contact.id !== id;
+    });
+
+    setContacts(newContactList);
+  }
   useEffect(() => {
       const retriveContacts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
       if (retriveContacts) setContacts(retriveContacts);
